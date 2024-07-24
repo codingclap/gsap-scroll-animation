@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Real Project</title>
+</head>
+
+<body>
+     <style>
+          * {
+               margin: 0px;
+               padding: 0px;
+          }
+
+          .main-container {
+               height: 100vh;
+               width: 100vw;
+               position: relative;
+          }
+
+          .first-container,
+          .second-container,
+          .third-container {
+               height: 100%;
+               width: 100%;
+               position: absolute;
+               top: 0;
+               overflow: hidden;
+          }
+
+          .section-1 {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-image: url('slide-1.jpg');
+               background-size: cover;
+               background-position: center center;
+               background-repeat: no-repeat;
+          }
+
+          .section-2 {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+          }
+
+          .section-3 {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+               background-color: black;
+               display: flex;
+               align-items: center;
+               justify-content: center; 
+               
+          }
+
+          .img-wrap {
+               width: 100vw;
+               height: 100vh;
+          }
+
+          .work-img-one {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+               left: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-image: url('slide-2.jpg');
+               background-size: cover;
+               background-position: center center;
+               background-repeat: no-repeat;
+               z-index: 2;
+          }
+
+          .work-img-two {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+               left: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-image: url('slide-3.jpg');
+               background-size: cover;
+               background-position: center center;
+               background-repeat: no-repeat;
+          }
+
+          .work-img-three {
+               height: 100vh;
+               width: 100vw;
+               overflow: hidden;
+               position: absolute;
+               top: 0;
+               left: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-image: url('slide-4.jpg');
+               background-size: cover;
+               background-position: center center;
+               background-repeat: no-repeat;
+          }
+     </style>
+
+     <div class="main-container">
+
+          <section class="first-container hero-cont">
+               <div class="section-1">
+                    <!-- <img src="slide-1.jpg" alt=""> -->
+                    <h2
+                         style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                         Slider - 1</h2>
+               </div>
+          </section>
+
+          <section class="second-container">
+               <div class="section-2 second-cont"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 100%);">
+                    <!-- <img src="slide-2.jpg" alt=""> -->
+                    <div class="img-wrap"
+                         style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                         <div class="work-img-one"
+                              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);">
+                              <h2
+                                   style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                   Slider - 2</h2>
+                         </div>
+
+                         <div class="work-img-two"
+                              style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);">
+                              <h2
+                                   style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                   Slider - 2.1 </h2>
+                         </div>
+
+                         <div class="work-img-three"
+                              style="translate: none; rotate: none; scale: none; transform: translate(200%, 0px);">
+                              <h2
+                                   style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                   Slider - 2.2</h2>
+                         </div>
+                    </div>
+               </div>
+
+          </section>
+
+          <section class="third-container">
+               <div class="section-3 footer-cont"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 100%);">
+                    <h2
+                         style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                         Footer</h2>
+               </div>
+          </section>
+
+     </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+     <script src="script.js"></script>
+</body>
+
+</html>
